@@ -1,9 +1,12 @@
 class DarwinInstaller
+
+  CURRENT_VERSION="0017"
+
   def self.install!
-    puts "Downloading arduino-0015 for Mac from Arduino.cc"
-    File.open("/Applications/arduino-0015.zip", "w") do |file|
+    puts "Downloading arduino-0017 for Mac from Arduino.cc"
+    File.open("/Applications/arduino-#{CURRENT_VERSION}.zip", "w") do |file|
       pbar = nil
-      file << open("http://arduino.googlecode.com/files/arduino-0015-mac.zip",
+      file << open("http://arduino.googlecode.com/files/arduino-#{CURRENT_VERSION}-mac.zip",
       :content_length_proc => lambda {|t|
         if t && 0 < t
           pbar = ProgressBar.new(" Progress", t)
@@ -16,8 +19,8 @@ class DarwinInstaller
       pbar.finish
     end
     puts "Unzipping..."
-    `cd /Applications; unzip arduino-0015.zip`
-    `rm /Applications/arduino-0015.zip`
-    puts "installed Arduino here: /Applications/arduino-0015"
+    `cd /Applications; unzip arduino-#{CURRENT_VERSION}.zip`
+    `rm /Applications/arduino-#{CURRENT_VERSION}.zip`
+    puts "installed Arduino here: /Applications/arduino-#{CURRENT_VERSION}"
   end
 end

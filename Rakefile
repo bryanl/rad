@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "madrona-rad"
+    gem.name = "bryanl-rad"
     gem.summary = %Q{RAD: Ruby Arduino Development - 0.4.1 -- 1.9 Ready!}
     gem.description = %Q{Ruby Arduino Development: a framework for programming the Arduino physcial computing platform using Ruby}
     gem.email = "jd@jdbarnhart.com"
-    gem.homepage = "http://github.com/madrona/madrona-rad"
+    gem.homepage = "http://github.com/bryanl/rad"
     gem.authors = ["JD Barnhart", "Greg Borenstein"]
     gem.add_dependency "ruby2c", ">= 1.0.0.7"
     gem.add_dependency "sexp_processor", ">=3.0.2"
@@ -48,7 +48,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "madrona-rad #{version}"
+  rdoc.title = "bryanl-rad #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

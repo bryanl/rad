@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{madrona-rad}
+  s.name = %q{bryanl-rad}
   s.version = "0.4.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["JD Barnhart", "Greg Borenstein"]
-  s.date = %q{2009-10-28}
+  s.date = %q{2009-12-26}
   s.default_executable = %q{rad}
   s.description = %q{Ruby Arduino Development: a framework for programming the Arduino physcial computing platform using Ruby}
   s.email = %q{jd@jdbarnhart.com}
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bin/rad",
+     "bryanl-rad.gemspec",
      "lib/examples/add_hysteresis.rb",
      "lib/examples/basic_blink.rb",
      "lib/examples/blink_m_address_assignment.rb",
@@ -143,7 +144,6 @@ Gem::Specification.new do |s|
      "lib/rad/todo.txt",
      "lib/rad/variable_processing.rb",
      "lib/rad/version.rb",
-     "madrona-rad.gemspec",
      "project_dev.rake",
      "setup.rb",
      "spec/examples/hello_world.rb",
@@ -161,7 +161,7 @@ Gem::Specification.new do |s|
      "test/test_translation_post_processing.rb",
      "test/test_variable_processing.rb"
   ]
-  s.homepage = %q{http://github.com/madrona/madrona-rad}
+  s.homepage = %q{http://github.com/bryanl/rad}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
